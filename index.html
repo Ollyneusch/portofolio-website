@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Evelyna A.K.</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+
+  <!-- HEADER + MENU -->
+  <header class="top">
+    <div class="wrap bar">
+      <a class="logo" href="#beranda"><span id="brand">Nama Anda</span></a>
+      <nav class="menu" id="menu">
+        <button data-view="beranda">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Home</span></button>
+        <button data-view="proyek">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Projects</span></button>
+        <button data-view="keahlian">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M13 3L4 14h7l-1 7 9-11h-7z"/></svg><span>Skills</span></button>
+        <button data-view="tentang">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>About</span></button>
+      </nav>
+      <button class="icon-btn" id="theme" aria-label="Ganti tema">☾</button>
+    </div>
+  </header>
+
+  <main class="stage">
+
+    <!-- HALAMAN 1: HOME -->
+    <section class="view" id="view-beranda">
+      <div class="wrap">
+        <div class="hero">
+          <div>
+            <h1>Hi, I am <span id="hName">Nama Anda</span></h1>
+            <p class="lead" id="hLead"></p>
+            <div class="actions">
+              <button class="btn primary" data-go="proyek">See Projects</button>
+              <a class="btn ghost js-mail" href="#">Contact Me</a>
+            </div>
+          </div>
+          <div class="portrait"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HALAMAN 2: PROJECTS -->
+    <section class="view" id="view-proyek">
+      <div class="wrap">
+        <div class="head"><h2>Projects</h2><p>Select a project to view its details.</p></div>
+        <div class="split">
+          <div class="card plist" id="pList"></div>
+          <article class="card detail" id="pDetail"></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HALAMAN 3: SKILLS -->
+    <section class="view" id="view-keahlian">
+      <div class="wrap">
+        <div class="head"><h2>Skills</h2><p>Things I know and use daily.</p></div>
+        <div class="skill-grid" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <!-- HALAMAN 4: ABOUT ME -->
+    <section class="view" id="view-tentang">
+      <div class="wrap">
+        <div class="head"><h2>About Me</h2><p>Get to know me better.</p></div>
+        <div class="card about-card">
+          <div class="profile">
+            <div class="portrait"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+            <div>
+              <h3 id="aName">Nama Anda</h3>
+              <p class="bio" id="aBio"></p>
+              <div class="info" id="aInfo"></div>
+
+              <div class="social" id="social"></div>
+
+              <div class="cta">
+                <a class="btn primary js-mail" href="#">
+                  <svg class="ic" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>Send me a message</a>
+                <a class="btn ghost" id="cvView" target="_blank" rel="noopener">
+                  <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>View CV</a>
+                <a class="btn ghost" id="cvDl" download>
+                  <svg class="ic" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>Download CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
