@@ -8,7 +8,7 @@ const CONFIG = {
     ["Status", "Undergraduate"],
     ["Languages", "Indonesia, English"]
   ],
-  cvFile: "CV.pdf",                      // taruh file cv.pdf di folder yang sama
+  cvFile: "CV.pdf",                     
   links: {
     email: "kristiadievelyna@gmail.com",
     instagram: "ollyn_hf",          
