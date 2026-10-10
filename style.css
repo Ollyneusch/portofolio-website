@@ -89,7 +89,7 @@ svg.ic { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: ro
 .portrait {
   width: min(100%, 340px); aspect-ratio: 1 / 1.1; border-radius: 28px; justify-self: center; position: relative;
   display: grid; place-items: center; color: #fff; font-size: 4.2rem; font-weight: 700; letter-spacing: -.03em;
-  background: url("Potret_Diri.jpeg") center/cover;
+  background: url("User/Potret_Diri.jpeg") center/cover;
   box-shadow: var(--shadow);
 }
 .portrait svg { display: none; }
